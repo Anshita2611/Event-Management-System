@@ -10,7 +10,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["https://vercel.com/anshita-jains-projects/event-management-system-v7wd"],
+    origin: [process.env.FRONTEND_URL],
     methods: ["POST"],
     credentials: true,
   })
